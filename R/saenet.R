@@ -145,7 +145,7 @@ saenet <- function(x, y, pf, adWeight, weights, family = c("gaussian", "binomial
   X <- do.call("rbind", x)
   Y <- do.call("c", y)
   
-  #' X <- scale(X, scale = apply(X, 2, function(.X) stats::sd(.X) * sqrt(m)))
+  # X <- scale(X, scale = apply(X, 2, function(.X) stats::sd(.X) * sqrt(m)))
   
   if (is.null(lambda)) {
     wY_X <- NULL
