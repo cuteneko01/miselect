@@ -1,4 +1,4 @@
-Package: miselect
+Package: miselectnk
 Title: Variable Selection for Multiply Imputed Data
 Version: 0.9.2
 Authors@R: c(
