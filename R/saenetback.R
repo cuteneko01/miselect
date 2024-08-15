@@ -172,9 +172,9 @@ saenetback <- function(x, y, pf, adWeight, weights, family = c("gaussian", "bino
   }
   
   fit <- switch(match.arg(family),
-                gaussian = fit.saenet.gaussian(X, Y, n, p, m, weights, nlambda, lambda,
+                gaussian = fit.saenetback.gaussian(X, Y, n, p, m, weights, nlambda, lambda,
                                                alpha, pf, adWeight, maxit, eps),
-                binomial = fit.saenet.binomial(X, Y, n, p, m, weights, nlambda, lambda,
+                binomial = fit.saenetback.binomial(X, Y, n, p, m, weights, nlambda, lambda,
                                                alpha, pf, adWeight, maxit, eps)
   )
   
