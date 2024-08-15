@@ -238,11 +238,11 @@ fit.saenet.binomial <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
     # mu <- attr(X, "scaled:center")
     # sd <- attr(X, "scaled:scale")
     # transform back into scale
-     coef <- rep(0, p + 1)
-     coef[1]  <- beta0 - sum(mu / sd * beta) # intercept
-     coef[-1] <- beta / sd
+    # coef <- rep(0, p + 1)
+    # coef[1]  <- beta0 - sum(mu / sd * beta) # intercept
+    # coef[-1] <- beta / sd
 
-    # coef <- c(beta0, beta)
+    coef <- c(beta0, beta)
     eta <- X %*% beta + beta0
 
     list(coef = coef, beta = c(beta0, beta))
@@ -308,11 +308,11 @@ fit.saenet.gaussian <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
     # mu <- attr(X, "scaled:center")
     # sd <- attr(X, "scaled:scale")
     
-     coef <- rep(0, p + 1)
+    # coef <- rep(0, p + 1)
     
-    coef[1]  <- beta0 - sum(mu / sd * beta) # intercept
-    coef[-1] <- beta / sd
-   # coef <- c(beta0, beta)
+    # coef[1]  <- beta0 - sum(mu / sd * beta) # intercept
+    # coef[-1] <- beta / sd
+    coef <- c(beta0, beta)
     list(coef = coef, beta = c(beta0, beta))
   }
   
