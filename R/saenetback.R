@@ -186,7 +186,7 @@ saenetback <- function(x, y, pf, adWeight, weights, family = c("gaussian", "bino
   return(fit)
 }
 
-fit.saenet.binomial <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
+fit.saenetback.binomial <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
                                 pf, adWeight, maxit, eps)
 {
   
@@ -271,7 +271,7 @@ fit.saenet.binomial <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
 }
 
 
-fit.saenet.gaussian <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
+fit.saenetback.gaussian <- function(X, Y, n, p, m, weights, nlambda, lambda, alpha,
                                 pf, adWeight, maxit, eps)
 {
   res <- numeric(n * m)
