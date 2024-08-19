@@ -131,7 +131,7 @@ cv.saenet <- function(x, y, pf, adWeight, weights, family = c("gaussian", "binom
     if (!is.numeric(foldid) || length(foldid) != length(y[[1]]))
       stop("'nfolds' should a be single number.")
   
-  fit <- saenetnostd(x, y, pf, adWeight, weights, family, alpha, nlambda,
+  fit <- saenet(x, y, pf, adWeight, weights, family, alpha, nlambda,
                 lambda.min.ratio, lambda, maxit, eps)
   
   X <- do.call("rbind", x)
