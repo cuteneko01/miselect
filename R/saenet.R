@@ -80,7 +80,7 @@
 #' Graphical Statistics, 31(4), 1063-1075. <doi:10.1080/10618600.2022.2035739>
 #' 
 #' @export
-saenetnostd <- function(x, y, pf, adWeight, weights, family = c("gaussian", "binomial"),
+saenet <- function(x, y, pf, adWeight, weights, family = c("gaussian", "binomial"),
                    alpha = 1, nlambda = 100, lambda.min.ratio =
                      ifelse(isTRUE(all.equal(adWeight, rep(1, p))), 1e-3, 1e-6),
                    lambda = NULL, maxit = 1000, eps = 1e-5)
